@@ -29,12 +29,16 @@ const multiply = function(numArray) {
       return parseInt(result);
 };
 
-const power = function() {
-	
+const power = function(num, pow) {
+	return Math.pow(num,pow);
 };
 
-const factorial = function() {
-	
+const factorial = function(factorialNum) {
+  let result = 1;
+	for(let i = 1; i <= factorialNum; i++){
+    result *= i;
+  }
+  return result;
 };
 
 
