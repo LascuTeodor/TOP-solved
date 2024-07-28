@@ -1,6 +1,6 @@
 const palindromes = function (palindromeToCheck) {
     let newStr = "";
-    let punctuationFilter = palindromeToCheck.replace(/[^\w]/g, '');
+    let punctuationFilter = palindromeToCheck.replace(/[^\w]/g, '').toLowerCase();
     for (let i = punctuationFilter.length - 1; i >= 0 ; i--) {
         newStr+=punctuationFilter[i];
     }
