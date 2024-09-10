@@ -32,4 +32,16 @@ container.appendChild(secondContainer);
 secondContainer.appendChild(secondHeader);
 secondContainer.appendChild(secondParagraph);
 
+const button = document.querySelector("#btn");
+// button.addEventListener("click", () => {
+//     alert("Hello World!");
+// });
+
+// function alertFunction(){
+//     alert("Yay you did it again");
+// }
+
+button.addEventListener("click", function(e){
+    console.log(e.target.style.backgroundColor = "blue");
+});
 
